@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: seagreen;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+h1 {
+  color: tomato;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(12, 61, 109) ;
+  margin:10px;
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+  .nav {
+    flex-direction: column;
+  }
+  a {
+    margin: 1px 10px;
+    padding: 3px 5px;
+    background-color: rgb(79, 196, 130);
+  }
+  h1 {
+    margin:1px 10px 15px 0px;
+    
+  }
+
+}
+
+@media screen and (orientation: landscape) {
+  .header {
+    padding:20px;
+  }
+  
+}
+
